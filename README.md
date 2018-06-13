@@ -1,5 +1,4 @@
-# matchavez-public
-This is my public github
+# sphinx-markdown
 
 ### sphinx_install.md
 This is the step-by-step installation documentation to get started with Sphinx using markdown as the main language.
