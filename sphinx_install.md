@@ -270,6 +270,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 html_theme_options = {
     'bootswatch_theme': "superhero",
     'bootstrap_version': "3",
+}
 ```
 
 ###### Finally, where the source_suffix says `'.rst'`, change it to equal the commented value
@@ -283,10 +284,11 @@ source_suffix = ['.rst', '.md']
 ```rst
 .. toctree::
    :maxdepth: 2
+   
    your-first-doc
 ```
 
-The index.rst file can be amended to fit your needs. The first time you build html, it's going to make an index.html Table of Contents, plus the first file you create. In this case, if you were to write `your-first-doc.md` you would enter, as above, `your-first-doc` without the extension. There are also other global alphabetical methods, such as `:glob:` and other options once you're under way.
+The index.rst file can be amended to fit your needs. The first time you build html, it's going to make an index.html Table of Contents, plus the first file you create. In this case, if you were to write `your-first-doc.md` you would enter, as above, `your-first-doc` without the extension. There are also other global alphabetical methods, such as `:glob:` and other options once you're under way. The blank line between is necessary.
 
 #### Step 11 - Add your first markdown document
 
