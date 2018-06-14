@@ -4,7 +4,7 @@
 
 #### Step 0 - Pre-reqs
 
-Assume a full install of 16.04 LTS Ubuntu, and internet connectivity. Must have sudo rights.
+Assume a full install of 16.04 LTS Ubuntu, if a VM minimum 25gb hd, and internet connectivity. Must have sudo rights.
 
 ### Installation
 
@@ -226,7 +226,7 @@ $ sudo apt install atom
 $ sudo apt install pandoc git
 ```
 
-It's also advantageous but optional to get the package called `markdown-preview-enhanced` to make markdown better in Atom.
+It's also advantageous but optional to get the package called `markdown-preview-enhanced` to make markdown better in Atom. Go to Edit > Preferences > Install, search, and install.
 
 Once installed, for simplicity, ` File > Add Project Folder` and add the path you installed, e.g. Documents for ease of finding all the files.
 
@@ -240,7 +240,9 @@ You can choose to copy-paste using the following:
 
 ```sh
 import recommonmark
- from recommonmark.transform import AutoStructify from recommonmark.parser import CommonMarkParser source_parsers = { 
+ from recommonmark.transform import AutoStructify 
+ from recommonmark.parser 
+ import CommonMarkParser source_parsers = { 
    '.md': CommonMarkParser
 }
 
@@ -304,9 +306,4 @@ The first command will create the HTML content rendering found in `build` folder
 ### This completes Creating a project and rendering content
 
 For more information, see the associated files.
-
-
-
-
-
 
