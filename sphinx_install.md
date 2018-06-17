@@ -4,7 +4,7 @@
 
 #### Step 0 - Pre-reqs
 
-Assume a full install of 16.04 LTS Ubuntu, if a VM minimum 25gb hd, and internet connectivity. Must have sudo rights.
+Assume a full install of 16.04 LTS Ubuntu, if a VM minimum 25gb hd, and internet connectivity. Recommend multi-core, especially if a VM. Must have sudo rights.
 
 ### Installation
 
