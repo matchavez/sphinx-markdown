@@ -222,7 +222,7 @@ Within the Document (or other selected) path, validate all of the following file
 ```
 $ sudo add-apt-repository ppa:webupd8team/atom
 $ sudo apt update
-$ sudo apt install atom
+$ sudo apt install atom -y
 ```
 
 It's also advantageous but optional to get the package called `markdown-preview-enhanced` to make markdown better in Atom. Go to Edit > Preferences > Install, search, and install.
