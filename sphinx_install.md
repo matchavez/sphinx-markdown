@@ -48,7 +48,7 @@ $ sudo apt-get install texlive-full -y
 ```
 
 #### As a final step, close the current terminal window to de-privilege.
-_(Without this step, the following script will create privileged files, and they will have to be chown'd to allow user runs.)_
+_(Without a close and re-open of the terminal window, the following script will create privileged files and they will have to be chown'd to allow user runs.)_
 
 ### This completes the installation steps
 
