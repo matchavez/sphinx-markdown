@@ -16,7 +16,7 @@ $ sudo apt upgrade -y
 $ sudo apt dist-upgrade -y
 ```
 
-> This may take a few minutes
+> The "upgrade" step may take a few minutes
 
 #### Step 2 - Install Python and update pip
 
