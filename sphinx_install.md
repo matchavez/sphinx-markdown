@@ -59,11 +59,13 @@ $ sudo apt-get install texlive-full -y
 
 #### Step 6 - Project setup
 
-The project folder will be a self-contained directory with all source and build files. It is portable, but you must change to that directory each time you want to run a content generation. An advanced setup might be a local git sync. The example here moves out of home into /Documents, but that is a user decision. Settings are recommended, but may not be applicable to all projects. These settings will all be adjustable after the opening script is complete.
+The project folder will be a self-contained directory with all source and build files. It is portable, but you must change to that directory each time you want to run a content generation. An advanced setup might be a local git sync. The example here moves out of home into /Documents/sph, but that is a user decision. Settings are recommended, but may not be applicable to all projects. These settings will all be adjustable after the opening script is complete.
 
 ```sh
 $ cd Documents
-Documents/$ sphinx-quickstart
+$ mkdir sph
+$ cd sph
+Documents/sph$ sphinx-quickstart
 ```
 
 `Welcome to the Sphinx quickstart utility.`
@@ -133,7 +135,7 @@ y
 `> Do you want to use the epub builder (y/n) [n]:` 
 
 ```sh
-<Enter>
+n
 ```
 
 `Indicate which of the following Sphinx extensions should be enabled:`
@@ -150,13 +152,13 @@ y
 `> intersphinx: link between Sphinx documentation of different projects (y/n) [n]:` 
 
 ```sh
-<Enter>
+n
 ```
 
 `> todo: write "todo" entries that can be shown or hidden on build (y/n) [n]:`
 
 ```sh
-<Enter>
+n
 ```
 `> coverage: checks for documentation coverage (y/n) [n]:` 
 
@@ -166,7 +168,7 @@ y
 `> imgmath: include math, rendered as PNG or SVG images (y/n) [n]:`
 
 ```sh
-<Enter>
+n
 ```
 `>mathjax: include math, rendered in the browser by MathJax (y/n) [n]:`
 
@@ -181,7 +183,7 @@ y
 `> viewcode: include links to the source code of documented Python objects (y/n) [n]:`
 
 ```sh
-<Enter>
+n
 ```
 `> githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]:`  
 
@@ -194,7 +196,7 @@ y
 `> Create Makefile? (y/n) [y]: <Enter>`
 
 ```sh
-<Enter>
+y
 ```
 `> Create Windows command file? (y/n) [y]:`
 
@@ -211,14 +213,14 @@ n
 Within the Document (or other selected) path, validate all of the following files:
 
 ```
-/Documents/
-|--/build/
-|--/source/
-   |--/_static/
-   |--/_templates/
-   |-- conf.py
-   |-- index.rst
-|-- Makefile
+/Documents/sph/
+  |--/build/
+  |--/source/
+     |--/_static/
+     |--/_templates/
+     |-- conf.py
+     |-- index.rst
+  |-- Makefile
 ```
 
 #### Step 8 - Get Atom
@@ -231,7 +233,7 @@ $ sudo apt install atom -y
 
 _Depending on the Atom install instructions, you may need to `[Enter]` through to complete the install._ It's also advantageous but optional to get the package called `markdown-preview-enhanced` to make markdown better in Atom. Go to Edit > Preferences > Install, search, and install.
 
-Once installed, for simplicity, ` File > Add Project Folder` and add the path you installed, e.g. Documents for ease of finding all the files.
+Once installed, for simplicity, ` File > Add Project Folder` and add the path you installed, e.g. Documents/sph for ease of finding all the files.
 
 #### Step 9 - Replace conf.py  contents
 
@@ -295,9 +297,11 @@ The index.rst file can be amended to fit your needs. The first time you build ht
 
 #### Step 11 - Add your first markdown document
 
-In tandem with the prior step, add a .md document to the same location as `index.rst` and call it, in this example `your-first-doc.md` (or be consistent in naming this the same as the prior step). You can also use the example file called `works-in-recommonmark.md` to see most of the formatting options. It is not entirely inclusive, but all standard markdown is supported, along with additional reStructuredText command examples. If you copy the entire file into the same place as `index.rst` and name that file, it'll generate an example to compare the raw and rendered views, assisting as an example for the formatting of your work.
+In tandem with the prior step, add a .md file to the same location as `index.rst` and call it, in this example `your-first-doc.md` (or be consistent in naming this the same as the prior step). You can also use the example file called `works-in-recommonmark.md` to see most of the formatting options. It is not entirely inclusive, but all standard markdown is supported, along with additional reStructuredText command examples. If you copy the entire file into the same place as `index.rst` and name that file, it'll generate an example to compare the raw and rendered views, assisting as an example for the formatting of your work.
 
 #### Step 12 - Generate Rendered Content
+
+> Be sure to re-enter the same location via terminal before re-running these commands!
 
 ```sh
 make html
@@ -306,9 +310,9 @@ make latexpdf
 
 The first command will create the HTML content rendering found in `build` folder. The second will create a PDF using LaTeX. Each time you want to change the content, simply run the commands.
 
-> Be sure to re-enter the same location via terminal before re-running these commands!
 
 ### This completes Creating a project and rendering content
+
 
 For more information, see the associated files.
 
