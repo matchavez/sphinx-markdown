@@ -243,10 +243,10 @@ You can choose to copy-paste using the following:
 
 ```sh
 import recommonmark
- from recommonmark.transform import AutoStructify 
- from recommonmark.parser 
- import CommonMarkParser source_parsers = { 
-   '.md': CommonMarkParser
+from recommonmark.transform import AutoStructify 
+from recommonmark.parser import CommonMarkParser 
+source_parsers = { 
+  '.md': CommonMarkParser
 }
 
 import sphinx_bootstrap_theme
