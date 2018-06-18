@@ -199,7 +199,7 @@ y
 `> Create Windows command file? (y/n) [y]:`
 
 ```sh
-<Enter>
+n
 ```
 `Creating file ./source/conf.py.`
 `Creating file ./source/index.rst.`
