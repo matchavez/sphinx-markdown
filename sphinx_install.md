@@ -47,7 +47,8 @@ $ sudo apt-get install texlive-full -y
  $ sudo pip install recommonmark
 ```
 
-**_!!! Close the current terminal window to de-privilege._**
+**Action: Close the current terminal window to de-privilege._**
+
 (Without a close and re-open of the terminal window, the following script will create privileged files and they will have to be chown'd to allow user runs.)
 
 ### This completes the installation steps
