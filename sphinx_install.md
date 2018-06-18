@@ -47,6 +47,9 @@ $ sudo apt-get install texlive-full -y
  $ sudo pip install recommonmark
 ```
 
+#### As a final step, close the current terminal window to de-privilege.
+_(Without this step, the following script will create privileged files, and they will have to be chown'd to allow user runs.)_
+
 ### This completes the installation steps
 
 ---
@@ -225,7 +228,7 @@ $ sudo apt update
 $ sudo apt install atom -y
 ```
 
-It's also advantageous but optional to get the package called `markdown-preview-enhanced` to make markdown better in Atom. Go to Edit > Preferences > Install, search, and install.
+_Depending on the Atom install instructions, you may need to `[Enter]` through to complete the install._ It's also advantageous but optional to get the package called `markdown-preview-enhanced` to make markdown better in Atom. Go to Edit > Preferences > Install, search, and install.
 
 Once installed, for simplicity, ` File > Add Project Folder` and add the path you installed, e.g. Documents for ease of finding all the files.
 
