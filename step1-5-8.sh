@@ -14,3 +14,6 @@ sudo apt-get install texlive-full -y
 sleep 4s
 sudo pip install recommonmark
 sudo pip install sphinx-markdown-tables
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt update
+sudo apt install atom -y
