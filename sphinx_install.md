@@ -36,7 +36,7 @@ $ sudo pip install sphinx_bootstrap_theme
 #### Step 4 - Install the PDF Generator
 
 ```sh
-$ sudo apt-get install texlive-full -y
+$ sudo apt-get install texlive -y
 ```
 
 > This may take 10-20 minutes
