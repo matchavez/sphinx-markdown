@@ -17,3 +17,4 @@ sudo pip install sphinx-markdown-tables
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt update
 sudo apt install atom -y
+echo -ne '\n'
