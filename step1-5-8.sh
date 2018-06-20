@@ -10,7 +10,7 @@ sudo pip install sphinx
 sudo pip install sphinxjp.themes.basicstrap
 sudo pip install sphinx_bootstrap_theme
 sleep 4s
-sudo apt-get install texlive-full -y
+sudo apt-get install texlive -y
 sleep 4s
 sudo pip install recommonmark
 sudo pip install sphinx-markdown-tables
