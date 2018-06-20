@@ -31,6 +31,7 @@ Make sure previous paragraph does not end with ``::``.
 +-------+-----------------+
 
 
+
     Make sure previous paragraph does not end with ``::``.
 
     +-------+----------+------+
