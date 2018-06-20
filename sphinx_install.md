@@ -4,7 +4,7 @@
 
 #### Step 0 - Pre-reqs
 
-Assume a full install of 16.04 LTS Ubuntu, if a VM minimum 25gb hd, and internet connectivity. Recommend multi-core, especially if a VM. Must have sudo rights.
+Assume a full install of 16.04.4 LTS Ubuntu, if a VM minimum 25gb hd, and internet connectivity. Recommend multi-core, especially if a VM. Must have sudo rights.
 
 ### Installation
 
@@ -45,6 +45,7 @@ $ sudo apt-get install texlive-full -y
 
 ```sh
  $ sudo pip install recommonmark
+ $ sudo pip install sphinx-markdown-tables
 ```
 
 **Action: Close the current terminal window to de-privilege._**
@@ -276,6 +277,20 @@ html_theme_options = {
     'bootswatch_theme': "superhero",
     'bootstrap_version': "3",
 }
+```
+
+###### Identify where `extensions = [`, and add the `'sphinx_markdown_tables',` line should be added
+
+```sh
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.doctest',
+    'sphinx.ext.coverage',
+    'sphinx.ext.mathjax',
+    'sphinx.ext.ifconfig',
+    'sphinx.ext.githubpages',
+    'sphinx_markdown_tables',
+]
 ```
 
 ###### Finally, where the source_suffix says `'.rst'`, change it to equal the commented value
