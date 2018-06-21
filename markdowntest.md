@@ -14,7 +14,7 @@ Unofficial
 rST Table:
 
     Make sure previous paragraph does not end with ``::``.
-
+    
     +-------+----------+------+
     | Table Headings   | Here |
     +-------+----------+------+
@@ -194,26 +194,27 @@ Use “code fences” \`\`\` to block in multiple lines of code.
 ```
 
 
-``` javascript
-<h5>Sample text here...</h5>
-grunt.initConfig({
-  assemble: {
-    options: {
-      assets: ‘docs/assets’,
-      data: ‘src/data/*.{json,yml}’,
-      helpers: ‘src/custom-helpers.js’,
-      partials: [‘src/partials/**/*.{hbs,md}’]
-    },
-    pages: {
-      options: {
-        layout: ‘default.hbs’
-      },
-      files: {
-        ‘./‘: [‘src/templates/pages/index.hbs’]
-      }
+```scala
+ class Queue[T](
+    private val leading: List[T], 
+    private val trailing: List[T] 
+  ) {
+    private def mirror = 
+      if (leading.isEmpty)
+        new Queue(trailing.reverse, Nil)
+      else
+        this
+
+    def head = mirror.leading.head
+
+    def tail = { 
+      val q = mirror 
+      new Queue(q.leading.tail, q.trailing) 
     }
+
+    def append(x: T) = 
+      new Queue(leading, x :: trailing)
   }
-};
 ```
 
 ---

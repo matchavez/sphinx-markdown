@@ -6,7 +6,7 @@
 
 Assume a full install of 16.04.4 LTS Ubuntu, if a VM minimum 25gb hd, and internet connectivity. Recommend multi-core, especially if a VM. Must have sudo rights.
 
-### Installation
+## Installation
 
 #### Step 1 - Fully update Ubuntu
 
@@ -39,7 +39,7 @@ $ sudo pip install sphinx_bootstrap_theme
 $ sudo apt-get install texlive -y
 ```
 
-> This may take 10-20 minutes
+> This may take 10-20 minutes, and you can use `textlive -full` if doing a multi-lang.
 
 #### Step 5 - Install the Markdown parser and close Terminal window
 
@@ -56,7 +56,7 @@ $ sudo apt-get install texlive -y
 
 ---
 
-### Creating a project and rendering content
+## Creating a project and rendering content
 
 #### Step 6 - Project setup
 
