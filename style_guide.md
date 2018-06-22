@@ -66,7 +66,33 @@ The text below each step should be plain text. The text below each step should b
 
 ###### Sub-step - Try to avoid splitting steps, but when it is appropriate, use -- H6
 
-The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. 
+The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text.
+
+---
+
+# H1 Title
+
+## H2 Subtitle (section should end with ---)
+
+### H3 !!! Call-out
+
+#### H4 Step or Action
+
+##### Preface or Context
+
+###### Sub-step or Sub-action
+
+**Bold Keywords**
+
+_Italics Conditionals_
+
+> Blockquotes Non-procedural context or information
+
+PlainText All other information
+
+---
+
+## Code and CLI
 
 #### Use of Code Fences should always use the LANGUAGE tag
 
@@ -155,3 +181,4 @@ A list of items in which the order of items does explicitly matter.
 1. Faucibus porta lacus fringilla vel
 1. Aenean sit amet erat nunc
 1. Eget porttitor lorem
+

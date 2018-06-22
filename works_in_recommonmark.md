@@ -132,7 +132,7 @@ Named anchors enable you to jump to the specified anchor point on the same page.
   * [Chapter 1](#chapter-1)
   * [Chapter 2](#chapter-2)
   * [Chapter 3](#chapter-3)
-  
+
 will jump to these sections:
 
 ## Chapter 1 <a id=“chapter-1”></a>
@@ -204,3 +204,7 @@ One more example is a table:
 
 ## reStructuredText Directives:
 http://docutils.sourceforge.net/docs/ref/rst/directives.html
+
+!!! Warning:
+    Python admonition format
+
