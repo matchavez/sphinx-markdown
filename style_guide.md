@@ -18,7 +18,7 @@ The text below each step should be plain text. The text below each step should b
 
 Remember, you should **avoid** the use of sub-steps, but sometimes it's **appropriate**. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. 
 
-_**Conditional statement** - This should be indicated with italics to suggest a followed path of non-linear movement, for example, 'do the next step unless a condition, otherwise please go to a later step'._ Emphasise the opening statement for clarity, and ensure that the directions of where to land under each condition are unambiguous.
+_**Conditional statement** - This should be indicated with italics to suggest a followed path of non-linear movement, for example, 'do the next step **unless a condition**, where please **go to a later step**'. Emphasise the opening statement for clarity, and ensure that the directions of where to land under each condition are unambiguous._
 
 ###### Example Sub-step Add to the very top of conf.py:
 
