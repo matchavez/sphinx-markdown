@@ -140,20 +140,14 @@ A list of items in which the order of the items does not explicitly matter. You 
   - Purus sodales ultricies
 + Faucibus porta lacus fringilla vel
 
-
 #### Ordered
 
 A list of items in which the order of items does explicitly matter.
 
 1. Lorem ipsum dolor sit amet
-
 2. Consectetur adipiscing elit
-
 3. Integer molestie lorem at massa
-
 4. Facilisis in pretium nisl aliquet
-
-   
 
 > TIP: If you just use 1. for each number, GitHub will automatically number each item. For example:
 
