@@ -102,3 +102,55 @@ Markdown | Less | Pretty
 1 | 2 | 3
 
 ---
+
+## Lists
+
+Unordered
+
+A list of items in which the order of the items does not explicitly matter.
+
+You may use any of the following symbols to denote bullets for each list item:
+
+* valid bullet
+- valid bullet
++ valid bullet
+
+Nesting
++ Lorem ipsum dolor sit amet
++ Consectetur adipiscing elit
++ Integer molestie lorem at massa
++ Facilisis in pretium nisl aliquet
++ Nulla volutpat aliquam velit
+  - Phasellus iaculis neque
+  - Purus sodales ultricies
+  - Vestibulum laoreet porttitor sem
+  - Ac tristique libero volutpat at
++ Faucibus porta lacus fringilla vel
++ Aenean sit amet erat nunc
++ Eget porttitor lorem
+
+
+Ordered
+
+A list of items in which the order of items does explicitly matter.
+
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
+4. Facilisis in pretium nisl aliquet
+5. Nulla volutpat aliquam velit
+6. Faucibus porta lacus fringilla vel
+7. Aenean sit amet erat nunc
+8. Eget porttitor lorem
+
+
+TIP: If you just use 1. for each number, GitHub will automatically number each item. For example:
+
+1. Lorem ipsum dolor sit amet
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+1. Facilisis in pretium nisl aliquet
+1. Nulla volutpat aliquam velit
+1. Faucibus porta lacus fringilla vel
+1. Aenean sit amet erat nunc
+1. Eget porttitor lorem
