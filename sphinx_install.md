@@ -10,42 +10,44 @@ Assume a full install of 16.04.4 LTS Ubuntu, if a VM minimum 25gb hd, and intern
 
 #### Step 1 - Fully update Ubuntu
 
-```sh
-$ sudo apt update -y
-$ sudo apt upgrade -y
-$ sudo apt dist-upgrade -y
+Enter the following commands:
+
+```bash
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt dist-upgrade -y
 ```
 
-> The "upgrade" step may take a few minutes
+_The "upgrade" step may take a few minutes._
 
 #### Step 2 - Install Python and update pip
 
 ```sh
-$ sudo apt-get install python-pip -y
-$ sudo pip install --upgrade pip
+sudo apt-get install python-pip -y
+sudo pip install --upgrade pip
 ```
 
 #### Step 3 - Install Sphinx and theme files
 
 ```sh
-$ sudo pip install sphinx
-$ sudo pip install sphinxjp.themes.basicstrap
-$ sudo pip install sphinx_bootstrap_theme
+sudo pip install sphinx
+sudo pip install sphinxjp.themes.basicstrap
+sudo pip install sphinx_bootstrap_theme
 ```
 
 #### Step 4 - Install the PDF Generator
 
 ```sh
-$ sudo apt-get install texlive -y
+sudo apt-get install texlive -y
 ```
 
-> This may take 10-20 minutes, and you can use `textlive -full` if doing a multi-lang.
+*This may take 10-20 minutes, and you can use* `textlive -full` *if doing a multi-lang.*
 
 #### Step 5 - Install the Markdown parser and close Terminal window
 
 ```sh
- $ sudo pip install recommonmark
- $ sudo pip install sphinx-markdown-tables
+ sudo pip install recommonmark
+ sudo pip install sphinx-markdown-tables
 ```
 
 **Action: Close the current terminal window to de-privilege._**
@@ -63,151 +65,153 @@ $ sudo apt-get install texlive -y
 The project folder will be a self-contained directory with all source and build files. It is portable, but you must change to that directory each time you want to run a content generation. An advanced setup might be a local git sync. The example here moves out of home into /Documents/sph, but that is a user decision. Settings are recommended, but may not be applicable to all projects. These settings will all be adjustable after the opening script is complete.
 
 ```sh
-$ cd Documents
-$ mkdir sph
-$ cd sph
-Documents/sph$ sphinx-quickstart
+cd Documents
+mkdir sph
+cd sph
+sphinx-quickstart
 ```
 
-`Welcome to the Sphinx quickstart utility.`
-`Please enter values for the following settings (just press Enter to`
-`accept a default value, if one is given in brackets).`
-`Selected root path: .`
-`You have two options for placing the build directory for Sphinx output.`
-`Either, you use a directory "_build" within the root path, or you separate`
-`"source" and "build" directories within the root path.`
-`> Separate source and build directories (y/n) [n]:` 
+>  Welcome to the Sphinx quickstart utility.
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+Selected root path: .
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory "_build" within the root path, or you separate
+"source" and "build" directories within the root path.
+> Separate source and build directories (y/n) [n]:
+
 
 ```sh
 y
 ```
 
-`Inside the root directory, two more directories will be created; "_templates"`
-`for custom HTML templates and "_static" for custom stylesheets and other static`
-`files. You can enter another prefix (such as ".") to replace the underscore.`
-`> Name prefix for templates and static dir [_]:` 
+> Inside the root directory, two more directories will be created; "_templates"
+for custom HTML templates and "_static" for custom stylesheets and other static
+files. You can enter another prefix (such as ".") to replace the underscore.
+> Name prefix for templates and static dir [_]:
+
 
 ```sh
 <Enter>
 ```
 
 
-`The project name will occur in several places in the built documentation.`
-`> Project name:` 
+> The project name will occur in several places in the built documentation.
+> Project name:
 
-*Enter your official project name. This can be changed, but it is worth getting it right first.*
+Enter your official project name. This can be changed, but it is worth getting it right first.
 
-`> Author name(s): `
+> Author name(s):
 
-*Enter author or team names here*
+Enter author or team names.
 
-`> Project release []:`
+> Project release []:
 
-*While optional, if versioning is a consideration, select the matching version number*
+While optional, if versioning is a consideration, select the matching version number.
 
-`If the documents are to be written in a language other than English,`
-`you can select a language here by its language code. Sphinx will then`
-`translate text that it generates into that language.`
-`For a list of supported codes, see`
-`http://sphinx-doc.org/config.html#confval-language`
-`\> Project language [en]:`
+>If the documents are to be written in a language other than English,
+you can select a language here by its language code. Sphinx will then
+translate text that it generates into that language.
+For a list of supported codes, see
+http://sphinx-doc.org/config.html#confval-language
+> Project language [en]:
 
-*Press enter if English, or select the appropriate two letter iso code*
+Press enter if English, or select the appropriate two letter iso code.
 
-`The file name suffic for source files. Commonly, this is either ".txt"`
-`or ".rst". Only files with this suffic are considered documents.`
-`> Source file suffix [.rst]:`
-
-```sh
-<Enter>
-```
-
-`One document is special in that is is considered the top node of the`
-`"contents tree", that is, it is the root of the heirarchical structure`
-`of the documents. Normally, this is "index", but if your "index"`
-`document is a custom template, you can also set this to another filename.`
-`> Name of your master document (without suffix) [index]:`
+> The file name suffic for source files. Commonly, this is either ".txt"
+or ".rst". Only files with this suffic are considered documents.
+> Source file suffix [.rst]:
 
 ```sh
 <Enter>
 ```
 
-`Sphinx can also add configuration for epub output:`
-`> Do you want to use the epub builder (y/n) [n]:` 
+> One document is special in that is is considered the top node of the
+"contents tree", that is, it is the root of the heirarchical structure
+of the documents. Normally, this is "index", but if your "index"
+document is a custom template, you can also set this to another filename.
+> Name of your master document (without suffix) [index]:
+
+```sh
+<Enter>
+```
+
+> Sphinx can also add configuration for epub output:
+> Do you want to use the epub builder (y/n) [n]:
 
 ```sh
 n
 ```
 
-`Indicate which of the following Sphinx extensions should be enabled:`
-`> autodoc: automatically insert docstrings from modules (y/n) [n]:`
+> Indicate which of the following Sphinx extensions should be enabled:
+> autodoc: automatically insert docstrings from modules (y/n) [n]:
 
 ```sh
 y
 ```
-`> doctest: automatically test code snippets (y/n) [n]:`
+> doctest: automatically test code snippets (y/n) [n]:
 
 ```sh
 y
 ```
-`> intersphinx: link between Sphinx documentation of different projects (y/n) [n]:` 
+> intersphinx: link between Sphinx documentation of different projects (y/n) [n]:
 
 ```sh
 n
 ```
 
-`> todo: write "todo" entries that can be shown or hidden on build (y/n) [n]:`
+> todo: write "todo" entries that can be shown or hidden on build (y/n) [n]:
 
 ```sh
 n
 ```
-`> coverage: checks for documentation coverage (y/n) [n]:` 
+> coverage: checks for documentation coverage (y/n) [n]:
 
 ```sh
 y
 ```
-`> imgmath: include math, rendered as PNG or SVG images (y/n) [n]:`
+> imgmath: include math, rendered as PNG or SVG images (y/n) [n]:
 
 ```sh
 n
 ```
-`>mathjax: include math, rendered in the browser by MathJax (y/n) [n]:`
+> mathjax: include math, rendered in the browser by MathJax (y/n) [n]:
 
 ```sh
 y
 ```
-`> ifconfig: conditional inclusion of content based on config values (y/n) [n]:`
+> ifconfig: conditional inclusion of content based on config values (y/n) [n]:
 
 ```sh
 y
 ```
-`> viewcode: include links to the source code of documented Python objects (y/n) [n]:`
+> viewcode: include links to the source code of documented Python objects (y/n) [n]:
 
 ```sh
 n
 ```
-`> githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]:`  
+> githubpages: create .nojekyll file to publish the document on GitHub pages (y/n) [n]:
 
 ```sh
 y
 ```
-`A Makefile and a Windows command file can be generated for you so that you`
-`only have to run e.g 'make html' instead of invoking sphinx-build`
-`directly.`
-`> Create Makefile? (y/n) [y]: <Enter>`
+> A Makefile and a Windows command file can be generated for you so that you
+only have to run e.g 'make html' instead of invoking sphinx-build
+directly.
+> Create Makefile? (y/n) [y]: 
 
 ```sh
 y
 ```
-`> Create Windows command file? (y/n) [y]:`
+> Create Windows command file? (y/n) [y]:
 
 ```sh
 n
 ```
-`Creating file ./source/conf.py.`
-`Creating file ./source/index.rst.`
-`Creating file ./Makefile.`
-`Finished: An initial directory structure has been created.`
+> Creating file ./source/conf.py.
+Creating file ./source/index.rst.
+Creating file ./Makefile.
+Finished: An initial directory structure has been created.
 
 #### Step 7 - Verify installed path
 
@@ -227,12 +231,12 @@ Within the Document (or other selected) path, validate all of the following file
 #### Step 8 - Get Atom
 
 ```
-$ sudo add-apt-repository ppa:webupd8team/atom
-$ sudo apt update
-$ sudo apt install atom -y
+sudo add-apt-repository ppa:webupd8team/atom
+sudo apt update
+sudo apt install atom -y
 ```
 
-_Depending on the Atom install instructions, you may need to `[Enter]` through to complete the install._ It's also advantageous but optional to get the package called `markdown-preview-enhanced` to make markdown better in Atom. Go to Edit > Preferences > Install, search, and install.
+**Depending on the Atom install instructions, you may need to `[Enter]` through to complete the install.** It's also advantageous but optional to get the package called `markdown-preview-enhanced` to make markdown better in Atom. Go to Edit > Preferences > Install, search, and install.
 
 Once installed, for simplicity, ` File > Add Project Folder` and add the path you installed, e.g. Documents/sph for ease of finding all the files.
 
@@ -316,7 +320,7 @@ In tandem with the prior step, add a .md file to the same location as `index.rst
 
 #### Step 12 - Generate Rendered Content
 
-> Be sure to re-enter the same location via terminal before re-running these commands!
+### Be sure to re-enter the same location via terminal before re-running these commands!
 
 ```sh
 make html
@@ -325,9 +329,5 @@ make latexpdf
 
 The first command will create the HTML content rendering found in `build` folder. The second will create a PDF using LaTeX. Each time you want to change the content, simply run the commands.
 
-
-### This completes Creating a project and rendering content
-
-
-For more information, see the associated files.
+### This completes Creating a project and rendering content. For more information, see the associated files.
 
