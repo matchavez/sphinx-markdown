@@ -22,7 +22,7 @@ _**Conditional statement** - This should be indicated with italics to suggest a 
 
 ###### Example Sub-step Add to the very top of conf.py:
 
-```sh
+```python
 import recommonmark
 from recommonmark.transform import AutoStructify 
 from recommonmark.parser import CommonMarkParser 
@@ -35,7 +35,7 @@ import sphinx_bootstrap_theme
 
 ###### Example sub-step Add to the very bottom of conf.py:
 
-```sh
+```python
 def setup(app): 
   app.add_config_value('recommonmark_config', {
     'enable_math': True, 
@@ -62,7 +62,9 @@ The text below each step should be plain text. The text below each step should b
 
 The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. 
 
-> Interesting information that should be separated to avoid confusion should be added in a blockquote. 
+### !!! Callouts should be used between steps for warnings or information that isn't part of a step.
+
+​    Warning text should be written below with 4 leading spaces
 
 ###### Sub-step - Try to avoid splitting steps, but when it is appropriate, use -- H6
 
@@ -72,7 +74,7 @@ The text below each step should be plain text. The text below each step should b
 
 # H1 Title
 
-## H2 Subtitle (section should end with ---)
+## H2 Subtitle (An H2 section should end with a HR ---)
 
 ### H3 !!! Call-out
 
@@ -86,7 +88,7 @@ The text below each step should be plain text. The text below each step should b
 
 _Italics Conditionals_
 
-> Blockquotes Non-procedural context or information
+> Blockquotes CLI OUTPUT
 
 PlainText All other information
 
@@ -104,25 +106,25 @@ object HelloWorld {
 }
 ```
 
-#### Whenever Command-Line Output is displayed, use single apostrophe in-line monospace
+#### Whenever Command-Line Output is displayed, use Blockquote
 
-The CLI output `the following text` for your viewing enjoyment.
+> The CLI output `the following text` for your viewing enjoyment.
 
-### It is crucial to maintain multi-line code fences for code examples!
+If the user is to input something into a CLI, it must be fenced, even if it is one line:
 
-If the user is to input something into a CLI, that should lead with a $ generally, or should be specific:
-
-` $ sudo ls -l `
-
-If entering a multi-line set of instructions, follow the same procedure and do NOT set a language for the fence:
-
-```
-$ sudo su
-$ ls -l
-$ mkdir eg && cd eg
+```sh
+sudo ls -l 
 ```
 
-Either is acceptable, but plan accordingly to be consistent.
+If entering a multi-line set of instructions, follow the same procedure
+
+```sh
+sudo su
+ls -l
+mkdir eg && cd eg
+```
+
+---
 
 ## Tables
 
@@ -175,7 +177,9 @@ A list of items in which the order of items does explicitly matter.
 3. Integer molestie lorem at massa
 4. Facilisis in pretium nisl aliquet
 
-> TIP: If you just use 1. for each number, GitHub will automatically number each item. For example:
+### !!! TIP: Markdown Reordering
+
+​    If you just use 1. for each number, GitHub will automatically number each item. For example:
 
 1. Nulla volutpat aliquam velit
 1. Faucibus porta lacus fringilla vel
