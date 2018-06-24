@@ -80,9 +80,9 @@ The text below each step should be plain text. The text below each step should b
 
 #### H4 Step or Action
 
-##### Preface or Context
+##### H5 Preface or Context
 
-###### Sub-step or Sub-action
+###### H6 Sub-step or Sub-action
 
 **Bold Keywords**
 
