@@ -76,27 +76,23 @@ The text below each step should be plain text. The text below each step should b
 
 ## H2 Subtitle (An H2 section should end with a HR ---)
 
-### H3 !!! Call-out
+### H3 !!! Call-out (Use 4 leading spaces for post-header plaintext)
 
 #### H4 Step or Action
 
-##### Preface or Context
+##### H5 Preface or Context
 
-###### Sub-step or Sub-action
+###### H6 Sub-step or Sub-action
 
 **Bold Keywords**
 
 _Italics Conditionals_
 
-> Blockquotes CLI OUTPUT
+> Blockquotes CLI Output
 
 PlainText All other information
 
----
-
-## Code and CLI
-
-#### Use of Code Fences should always use the LANGUAGE tag
+## Code and CLI Input - use code fence with language tag
 
 ```scala
 object HelloWorld {
