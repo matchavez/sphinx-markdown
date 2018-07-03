@@ -8,6 +8,8 @@ This serves as a Style Guide for documentation for how to use Markdown within ou
 
 ## Subtitle - Section or Division for the Document -- H2
 
+### A set of steps, or a category of sequential steps, always optional -- H3
+
 Information available for the explanation of each section should be plain text. Information available for the explanation of each section should be plain text. Information available for the explanation of each section should be plain text. Information available for the explanation of each section should be plain text.
 
 #### Action Step Title - This is a step or action you want someone to take -- H4
@@ -46,17 +48,31 @@ def setup(app):
   app.add_transform(AutoStructify)
 ```
 
+This is some CLI Output:
+
+> Command Line Information is\
+often multi-lined and end in\
+weird spots.\
+Use a BLOCKQUOTE which is a greater-than\
+sign and a space. Then any line break that's\
+needed, add a backslash after the last char\
+of each line.
+
+
 #### Action Step Title - This is a step or action you want someone to take -- H4
 
 Keywords should individually be made **bold** as needed. The text below each step should be plain text. Keywords should individually be made **bold** as needed. The text below each step should be plain text. Keywords should individually be made **bold** as needed. The text below each step should be plain text.
 
 ## Subtitle - Section or Division for the Document -- H2
 
-### !!! Call Out - This is a section of critical information important at this part of the procedures / Please use 3 leading !!! for forward compatibility of 'Warnings' -- H3
+### !!! Call Out -- H3 
+   This is a section of critical information important at this part of the procedures / Please use 3 leading !!! for forward compatibility of 'Warnings', and 3 leading spaces on following text.
 
 #### Action Step Title - This is a step or action you want someone to take -- H4
 
 The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. The text below each step should be plain text. 
+
+**Section Title within a Sub-Title -- Bold**
 
 ###### Sub-step - Try to avoid splitting steps, but when it is appropriate, use -- H6
 
@@ -64,7 +80,7 @@ The text below each step should be plain text. The text below each step should b
 
 ### !!! Callouts should be used between steps for warnings or information that isn't part of a step.
 
-​    Warning text should be written below with 4 leading spaces
+   Warning text should be written below with 3 leading spaces
 
 ###### Sub-step - Try to avoid splitting steps, but when it is appropriate, use -- H6
 
@@ -76,7 +92,10 @@ The text below each step should be plain text. The text below each step should b
 
 ## H2 Subtitle (An H2 section should end with a HR ---)
 
-### H3 !!! Call-out (Use 4 leading spaces for post-header plaintext)
+### H3 !!! Call-out:
+   Next line with 3 leading spaces. Call outs use !!!
+
+### H3 A set of steps, or a category of sequential steps
 
 #### H4 Step or Action
 
@@ -84,15 +103,20 @@ The text below each step should be plain text. The text below each step should b
 
 ###### H6 Sub-step or Sub-action
 
-**Bold Keywords**
+**Bold Keywords** or **Section Title within a Sub-Title -- Bold**
 
 _Italics Conditionals_
 
-> Blockquotes CLI Output
+> Blockquotes CLI OUTPUT\
+Line breaks are backslash at end of line
 
 PlainText All other information
 
-## Code and CLI Input - use code fence with language tag
+---
+
+## Code and CLI
+
+#### Use of Code Fences should always use the LANGUAGE tag
 
 ```scala
 object HelloWorld {
@@ -182,3 +206,29 @@ A list of items in which the order of items does explicitly matter.
 1. Aenean sit amet erat nunc
 1. Eget porttitor lorem
 
+*Markdown does not allow for Ordered/Numeric Nesting*
+
+---
+
+## Images
+
+Images should reside in an /images path relative to the document. 
+
+![Alt text](images/stormtroopocat.jpg 'The Stormtroopocat')
+
+Mouse over, and you find the alt text added.
+
+---
+
+## Linking
+
+[Telstra](http://telstra.com)
+
+[Hover for Alt Text](https://github.com/cognevo/ 'Our GitHub')
+
+---
+
+## Comments (See raw source code to view)
+
+<!--- Use 3 en dashes to be certain a comment is picked up by all systems. --->
+<!--- Comments are visible within source, but should be avoided for documents. --->
